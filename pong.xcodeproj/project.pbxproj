@@ -24,6 +24,24 @@
 		C889B832180D35C700018A0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B80A180D35C600018A0C /* Foundation.framework */; };
 		C889B83A180D35C700018A0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C889B838180D35C700018A0C /* InfoPlist.strings */; };
 		C889B83D180D35C700018A0C /* pongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B83C180D35C700018A0C /* pongTests.m */; };
+		C889B84A180D361600018A0C /* Menu03.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B846180D361600018A0C /* Menu03.png */; };
+		C889B84B180D361600018A0C /* Menu03.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B846180D361600018A0C /* Menu03.png */; };
+		C889B84C180D361600018A0C /* Menu04.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B847180D361600018A0C /* Menu04.png */; };
+		C889B84D180D361600018A0C /* Menu04.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B847180D361600018A0C /* Menu04.png */; };
+		C889B84E180D361600018A0C /* Menu05.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B848180D361600018A0C /* Menu05.png */; };
+		C889B84F180D361600018A0C /* Menu05.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B848180D361600018A0C /* Menu05.png */; };
+		C889B850180D361600018A0C /* Player.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B849180D361600018A0C /* Player.jpg */; };
+		C889B851180D361600018A0C /* Player.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B849180D361600018A0C /* Player.jpg */; };
+		C889B856180D362C00018A0C /* Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B852180D362C00018A0C /* Ball.jpg */; };
+		C889B857180D362C00018A0C /* Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B852180D362C00018A0C /* Ball.jpg */; };
+		C889B858180D362C00018A0C /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B853180D362C00018A0C /* GameBackGround.png */; };
+		C889B859180D362C00018A0C /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B853180D362C00018A0C /* GameBackGround.png */; };
+		C889B85A180D362C00018A0C /* Menu01.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B854180D362C00018A0C /* Menu01.png */; };
+		C889B85B180D362C00018A0C /* Menu01.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B854180D362C00018A0C /* Menu01.png */; };
+		C889B85C180D362C00018A0C /* Menu02.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B855180D362C00018A0C /* Menu02.png */; };
+		C889B85D180D362C00018A0C /* Menu02.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B855180D362C00018A0C /* Menu02.png */; };
+		C889B864180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
+		C889B865180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +78,16 @@
 		C889B839180D35C700018A0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C889B83B180D35C700018A0C /* pongTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pongTests.h; sourceTree = "<group>"; };
 		C889B83C180D35C700018A0C /* pongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pongTests.m; sourceTree = "<group>"; };
+		C889B846180D361600018A0C /* Menu03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu03.png; sourceTree = "<group>"; };
+		C889B847180D361600018A0C /* Menu04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu04.png; sourceTree = "<group>"; };
+		C889B848180D361600018A0C /* Menu05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu05.png; sourceTree = "<group>"; };
+		C889B849180D361600018A0C /* Player.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Player.jpg; sourceTree = "<group>"; };
+		C889B852180D362C00018A0C /* Ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ball.jpg; sourceTree = "<group>"; };
+		C889B853180D362C00018A0C /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameBackGround.png; sourceTree = "<group>"; };
+		C889B854180D362C00018A0C /* Menu01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu01.png; sourceTree = "<group>"; };
+		C889B855180D362C00018A0C /* Menu02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu02.png; sourceTree = "<group>"; };
+		C889B862180D3E8400018A0C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		C889B863180D3E8400018A0C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +153,8 @@
 				C889B823180D35C700018A0C /* MainStoryboard_iPad.storyboard */,
 				C889B826180D35C700018A0C /* ViewController.h */,
 				C889B827180D35C700018A0C /* ViewController.m */,
+				C889B862180D3E8400018A0C /* Game.h */,
+				C889B863180D3E8400018A0C /* Game.m */,
 				C889B80F180D35C600018A0C /* Supporting Files */,
 			);
 			path = pong;
@@ -133,6 +163,14 @@
 		C889B80F180D35C600018A0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C889B852180D362C00018A0C /* Ball.jpg */,
+				C889B853180D362C00018A0C /* GameBackGround.png */,
+				C889B854180D362C00018A0C /* Menu01.png */,
+				C889B855180D362C00018A0C /* Menu02.png */,
+				C889B846180D361600018A0C /* Menu03.png */,
+				C889B847180D361600018A0C /* Menu04.png */,
+				C889B848180D361600018A0C /* Menu05.png */,
+				C889B849180D361600018A0C /* Player.jpg */,
 				C889B810180D35C600018A0C /* pong-Info.plist */,
 				C889B811180D35C600018A0C /* InfoPlist.strings */,
 				C889B814180D35C600018A0C /* main.m */,
@@ -240,6 +278,14 @@
 				C889B81F180D35C700018A0C /* Default-568h@2x.png in Resources */,
 				C889B822180D35C700018A0C /* MainStoryboard_iPhone.storyboard in Resources */,
 				C889B825180D35C700018A0C /* MainStoryboard_iPad.storyboard in Resources */,
+				C889B84A180D361600018A0C /* Menu03.png in Resources */,
+				C889B84C180D361600018A0C /* Menu04.png in Resources */,
+				C889B84E180D361600018A0C /* Menu05.png in Resources */,
+				C889B850180D361600018A0C /* Player.jpg in Resources */,
+				C889B856180D362C00018A0C /* Ball.jpg in Resources */,
+				C889B858180D362C00018A0C /* GameBackGround.png in Resources */,
+				C889B85A180D362C00018A0C /* Menu01.png in Resources */,
+				C889B85C180D362C00018A0C /* Menu02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C889B83A180D35C700018A0C /* InfoPlist.strings in Resources */,
+				C889B84B180D361600018A0C /* Menu03.png in Resources */,
+				C889B84D180D361600018A0C /* Menu04.png in Resources */,
+				C889B84F180D361600018A0C /* Menu05.png in Resources */,
+				C889B851180D361600018A0C /* Player.jpg in Resources */,
+				C889B857180D362C00018A0C /* Ball.jpg in Resources */,
+				C889B859180D362C00018A0C /* GameBackGround.png in Resources */,
+				C889B85B180D362C00018A0C /* Menu01.png in Resources */,
+				C889B85D180D362C00018A0C /* Menu02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +331,7 @@
 				C889B815180D35C600018A0C /* main.m in Sources */,
 				C889B819180D35C600018A0C /* AppDelegate.m in Sources */,
 				C889B828180D35C700018A0C /* ViewController.m in Sources */,
+				C889B864180D3E8400018A0C /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C889B83D180D35C700018A0C /* pongTests.m in Sources */,
+				C889B865180D3E8400018A0C /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
