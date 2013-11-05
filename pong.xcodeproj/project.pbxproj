@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C877426E1828DD4B0072714A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C877426D1828DD4B0072714A /* AVFoundation.framework */; };
+		C87742701828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */; };
+		C87742711828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */; };
 		C889B809180D35C600018A0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B808180D35C600018A0C /* UIKit.framework */; };
 		C889B80B180D35C600018A0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B80A180D35C600018A0C /* Foundation.framework */; };
 		C889B80D180D35C600018A0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B80C180D35C600018A0C /* CoreGraphics.framework */; };
@@ -55,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C877426D1828DD4B0072714A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nice dubstep music !.mp3"; path = "../../Nice dubstep music !.mp3"; sourceTree = "<group>"; };
 		C889B805180D35C600018A0C /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C889B808180D35C600018A0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C889B80A180D35C600018A0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C877426E1828DD4B0072714A /* AVFoundation.framework in Frameworks */,
 				C889B809180D35C600018A0C /* UIKit.framework in Frameworks */,
 				C889B80B180D35C600018A0C /* Foundation.framework in Frameworks */,
 				C889B80D180D35C600018A0C /* CoreGraphics.framework in Frameworks */,
@@ -136,6 +142,7 @@
 		C889B807180D35C600018A0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C877426D1828DD4B0072714A /* AVFoundation.framework */,
 				C889B808180D35C600018A0C /* UIKit.framework */,
 				C889B80A180D35C600018A0C /* Foundation.framework */,
 				C889B80C180D35C600018A0C /* CoreGraphics.framework */,
@@ -163,6 +170,7 @@
 		C889B80F180D35C600018A0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */,
 				C889B852180D362C00018A0C /* Ball.jpg */,
 				C889B853180D362C00018A0C /* GameBackGround.png */,
 				C889B854180D362C00018A0C /* Menu01.png */,
@@ -286,6 +294,7 @@
 				C889B858180D362C00018A0C /* GameBackGround.png in Resources */,
 				C889B85A180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85C180D362C00018A0C /* Menu02.png in Resources */,
+				C87742701828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +311,7 @@
 				C889B859180D362C00018A0C /* GameBackGround.png in Resources */,
 				C889B85B180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85D180D362C00018A0C /* Menu02.png in Resources */,
+				C87742711828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +533,7 @@
 				C889B842180D35C700018A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C889B843180D35C700018A0C /* Build configuration list for PBXNativeTarget "pongTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +542,7 @@
 				C889B845180D35C700018A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

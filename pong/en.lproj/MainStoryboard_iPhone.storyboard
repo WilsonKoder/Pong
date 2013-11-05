@@ -15,8 +15,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Menu05.png" translatesAutoresizingMaskIntoConstraints="NO" id="SRz-cW-zse"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2m-tU-2Yb">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="X0W-bj-7jT"/>
-                                    <constraint firstAttribute="width" constant="55" id="hxO-fT-pF3"/>
+                                    <constraint firstAttribute="width" constant="136" id="iB4-Bv-Ypo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play">
@@ -27,7 +26,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="S3S-Yb-Rv5" kind="modal" id="tVN-z1-yny"/>
+                                    <segue destination="S3S-Yb-Rv5" kind="modal" id="sV1-Dm-hE8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,9 +34,9 @@
                         <constraints>
                             <constraint firstItem="SRz-cW-zse" firstAttribute="bottom" secondItem="TV8-4R-Ln5" secondAttribute="bottom" type="default" id="Mdt-rj-o5L"/>
                             <constraint firstItem="SRz-cW-zse" firstAttribute="top" secondItem="TV8-4R-Ln5" secondAttribute="top" type="default" id="Mtl-XR-Laf"/>
+                            <constraint firstAttribute="bottom" secondItem="M2m-tU-2Yb" secondAttribute="bottom" constant="105" id="NbX-05-lZq"/>
                             <constraint firstItem="SRz-cW-zse" firstAttribute="leading" secondItem="TV8-4R-Ln5" secondAttribute="leading" type="default" id="Or9-7P-18P"/>
-                            <constraint firstAttribute="bottom" secondItem="M2m-tU-2Yb" secondAttribute="bottom" constant="50" id="VNY-z4-lab"/>
-                            <constraint firstItem="M2m-tU-2Yb" firstAttribute="centerX" secondItem="SRz-cW-zse" secondAttribute="centerX" type="default" id="VqK-5D-06d"/>
+                            <constraint firstItem="M2m-tU-2Yb" firstAttribute="centerX" secondItem="SRz-cW-zse" secondAttribute="centerX" type="default" id="X9e-Vy-dwp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,7 +64,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-56-rVz">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Start Point">
+                                <state key="normal" title="Start - Hard">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -73,7 +72,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="StartButton:" destination="S3S-Yb-Rv5" eventType="touchUpInside" id="ZD5-hf-bEK"/>
+                                    <action selector="StartHard:" destination="S3S-Yb-Rv5" eventType="touchUpInside" id="5hf-Ti-W0T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86S-EM-m3M">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rTg-JP-lcP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start - Easy">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartEasy:" destination="S3S-Yb-Rv5" eventType="touchUpInside" id="aXe-QA-CpX"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Player.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rtH-e6-f2p">
@@ -87,19 +102,61 @@
                                     <constraint firstAttribute="width" constant="61" id="QTP-5a-bOq"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaz-bD-1zj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXB-C8-HIP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You Lose!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esf-mX-K0k">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="HEe-Eq-0cn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCI-zS-Act">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9wx-jj-vTp" kind="modal" id="qq3-J9-M1m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Abt-y4-Dfd" firstAttribute="centerX" secondItem="zZJ-56-rVz" secondAttribute="centerX" type="default" id="41u-dm-obe"/>
-                            <constraint firstItem="rtH-e6-f2p" firstAttribute="centerX" secondItem="zZJ-56-rVz" secondAttribute="centerX" type="default" id="BDP-Q7-xNa"/>
-                            <constraint firstItem="rtH-e6-f2p" firstAttribute="centerX" secondItem="Fbz-aS-sr7" secondAttribute="centerX" type="default" id="BzQ-uU-jcG"/>
+                            <constraint firstItem="esf-mX-K0k" firstAttribute="centerX" secondItem="Ium-Zn-KWU" secondAttribute="centerX" type="default" id="0yO-AH-Jqw"/>
+                            <constraint firstItem="Abt-y4-Dfd" firstAttribute="centerX" secondItem="Fbz-aS-sr7" secondAttribute="centerX" type="default" id="1YT-1H-JgK"/>
+                            <constraint firstItem="aaz-bD-1zj" firstAttribute="leading" secondItem="nmg-vW-KAH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7TK-5Y-xth"/>
+                            <constraint firstItem="86S-EM-m3M" firstAttribute="leading" secondItem="zZJ-56-rVz" secondAttribute="leading" type="default" id="8gY-0I-HDJ"/>
                             <constraint firstAttribute="bottom" secondItem="rtH-e6-f2p" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="DYm-aN-08Q"/>
                             <constraint firstItem="Fbz-aS-sr7" firstAttribute="top" secondItem="nmg-vW-KAH" secondAttribute="top" type="default" id="Ggt-JT-Llr"/>
                             <constraint firstItem="Ium-Zn-KWU" firstAttribute="top" secondItem="nmg-vW-KAH" secondAttribute="top" constant="20" symbolic="YES" type="default" id="HzQ-hr-Inz"/>
+                            <constraint firstItem="86S-EM-m3M" firstAttribute="centerX" secondItem="Abt-y4-Dfd" secondAttribute="centerX" type="default" id="L6Q-Ca-VNY"/>
+                            <constraint firstItem="esf-mX-K0k" firstAttribute="top" secondItem="nmg-vW-KAH" secondAttribute="top" constant="91" id="NGL-P4-Ddd"/>
                             <constraint firstItem="Ium-Zn-KWU" firstAttribute="trailing" secondItem="rtH-e6-f2p" secondAttribute="trailing" type="default" id="OmC-Gp-Fr3"/>
+                            <constraint firstItem="sCI-zS-Act" firstAttribute="centerX" secondItem="zZJ-56-rVz" secondAttribute="centerX" type="default" id="PuK-SC-OJZ"/>
                             <constraint firstItem="Abt-y4-Dfd" firstAttribute="top" secondItem="nmg-vW-KAH" secondAttribute="top" constant="250" id="XpW-K6-Xj1"/>
                             <constraint firstItem="Fbz-aS-sr7" firstAttribute="bottom" secondItem="nmg-vW-KAH" secondAttribute="bottom" type="default" id="bH4-dF-V3o"/>
+                            <constraint firstItem="86S-EM-m3M" firstAttribute="top" secondItem="aXB-C8-HIP" secondAttribute="top" type="default" id="bO9-3E-Sch"/>
+                            <constraint firstItem="sCI-zS-Act" firstAttribute="centerX" secondItem="rtH-e6-f2p" secondAttribute="centerX" type="default" id="da2-Fa-jUr"/>
+                            <constraint firstItem="86S-EM-m3M" firstAttribute="trailing" secondItem="zZJ-56-rVz" secondAttribute="trailing" type="default" id="fVv-oo-sKV"/>
+                            <constraint firstAttribute="bottom" secondItem="sCI-zS-Act" secondAttribute="bottom" constant="74" id="gqH-VC-mqP"/>
                             <constraint firstAttribute="bottom" secondItem="zZJ-56-rVz" secondAttribute="bottom" constant="140" id="he4-vN-mfX"/>
+                            <constraint firstItem="aaz-bD-1zj" firstAttribute="top" secondItem="nmg-vW-KAH" secondAttribute="top" constant="167" id="hjF-fN-NhU"/>
+                            <constraint firstAttribute="bottom" secondItem="86S-EM-m3M" secondAttribute="bottom" constant="195" id="jQe-EX-RLl"/>
+                            <constraint firstItem="aXB-C8-HIP" firstAttribute="leading" secondItem="nmg-vW-KAH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tbv-b7-hmQ"/>
                             <constraint firstItem="Fbz-aS-sr7" firstAttribute="leading" secondItem="nmg-vW-KAH" secondAttribute="leading" type="default" id="vu1-Ap-0yE"/>
                             <constraint firstItem="Ium-Zn-KWU" firstAttribute="leading" secondItem="rtH-e6-f2p" secondAttribute="leading" type="default" id="xny-Pk-eU1"/>
                         </constraints>
@@ -107,12 +164,18 @@
                     <connections>
                         <outlet property="Ball" destination="Abt-y4-Dfd" id="Nys-hf-cMR"/>
                         <outlet property="Computer" destination="Ium-Zn-KWU" id="rhe-7U-dZK"/>
+                        <outlet property="ComputerScore" destination="aaz-bD-1zj" id="g1b-4B-vdA"/>
+                        <outlet property="Exit" destination="sCI-zS-Act" id="Jf0-Kp-eMf"/>
                         <outlet property="Player" destination="rtH-e6-f2p" id="H81-Bf-qjm"/>
+                        <outlet property="PlayerScore" destination="aXB-C8-HIP" id="4oE-gT-jvU"/>
+                        <outlet property="StartEasy" destination="86S-EM-m3M" id="l0U-S8-n7A"/>
+                        <outlet property="StartHard" destination="zZJ-56-rVz" id="4fN-Oj-RUi"/>
+                        <outlet property="WinOrLose" destination="esf-mX-K0k" id="LUm-sM-oK7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJo-C5-KqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555" y="256"/>
+            <point key="canvasLocation" x="614" y="255"/>
         </scene>
     </scenes>
     <resources>
