@@ -40,16 +40,16 @@
     Player.center = CGPointMake(Player.center.x, 430);
     
     /*
-   
-    if (Player.center.y > 430) {
-        Player.center = CGPointMake(Player.center.x, 430);
-    }
-    
-    
-    if (Player.center.y < 430) {
-        Player.center = CGPointMake(Player.center.x, 430);
-    }
-    */
+     
+     if (Player.center.y > 430) {
+     Player.center = CGPointMake(Player.center.x, 430);
+     }
+     
+     
+     if (Player.center.y < 430) {
+     Player.center = CGPointMake(Player.center.x, 430);
+     }
+     */
     
     if (Player.center.x < 30) {
         Player.center = CGPointMake(30, Player.center.y);
@@ -58,18 +58,18 @@
     if (Player.center.x > 290) {
         Player.center = CGPointMake(290, Player.center.y);
     }
-     
+    
 }
 
 
 -(void)ComputerMovement{
     
     
-    if (Computer.center.x > Ball.center.x) {
+    if (Computer.center.x - Ball.center.x > 50) {
         Computer.center = CGPointMake(Computer.center.x - 2, Computer.center.y);
     }
     
-    if (Computer.center.x < Ball.center.x) {
+    if (Computer.center.x - Ball.center.x < 50) {
         Computer.center = CGPointMake(Computer.center.x + 2, Computer.center.y);
     }
     
@@ -89,7 +89,7 @@
 
 
 -(IBAction)StartEasy:(id)sender{
-    speed = 0.01;
+    speed = 0.0075;
     [self StartGame];
 }
 
@@ -138,13 +138,14 @@
         X = 0 - X;
     }
     
+    /*
     if (Ball.center.y < 18 || Ball.center.y > 445) {
-       // Y = 0 - Y;
+        // Y = 0 - Y;
         Y = -1 * Y;
     }
+    */
     
-    
-    if (Ball.center.y < 0) {
+    if (Ball.center.y < 18) {
         PlayerScoreNumber = PlayerScoreNumber + 1;
         PlayerScore.text = [NSString stringWithFormat:@"%i", PlayerScoreNumber];
         
@@ -163,8 +164,8 @@
             WinOrLose.text = [NSString stringWithFormat:@"You Win!"];
         }
     } // end if Ball.center.y <0
-
-    if (Ball.center.y > 580) {
+    
+    if (Ball.center.y > 445) {
         ComputerScoreNumber = ComputerScoreNumber + 1;
         ComputerScore.text = [NSString stringWithFormat:@"%i", ComputerScoreNumber];
         [timer invalidate];
@@ -197,6 +198,7 @@
 
 - (void)viewDidLoad
 {
+    [WinOrLose setFont:[UIFont fontWithName:@"FaceYourFears" size:36]];
     
     PlayerScoreNumber = 0;
     ComputerScoreNumber = 0;

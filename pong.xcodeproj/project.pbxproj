@@ -45,6 +45,8 @@
 		C889B85D180D362C00018A0C /* Menu02.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B855180D362C00018A0C /* Menu02.png */; };
 		C889B864180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
 		C889B865180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
+		C8B2DC3E1828F534007E602D /* FaceYourFears.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */; };
+		C8B2DC3F1828F534007E602D /* FaceYourFears.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,7 @@
 		C889B855180D362C00018A0C /* Menu02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu02.png; sourceTree = "<group>"; };
 		C889B862180D3E8400018A0C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		C889B863180D3E8400018A0C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceYourFears.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,7 @@
 		C889B7FC180D35C600018A0C = {
 			isa = PBXGroup;
 			children = (
+				C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */,
 				C889B80E180D35C600018A0C /* pong */,
 				C889B835180D35C700018A0C /* pongTests */,
 				C889B807180D35C600018A0C /* Frameworks */,
@@ -295,6 +299,7 @@
 				C889B85A180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85C180D362C00018A0C /* Menu02.png in Resources */,
 				C87742701828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */,
+				C8B2DC3E1828F534007E602D /* FaceYourFears.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +317,7 @@
 				C889B85B180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85D180D362C00018A0C /* Menu02.png in Resources */,
 				C87742711828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */,
+				C8B2DC3F1828F534007E602D /* FaceYourFears.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
