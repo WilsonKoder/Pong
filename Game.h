@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 int Y;
 int X;
@@ -14,26 +15,34 @@ int ComputerScoreNumber;
 int PlayerScoreNumber;
 float speed;
 
-@interface Game : UIViewController
+@interface Game : UIViewController <UIApplicationDelegate, AVAudioPlayerDelegate>
 
 {
-    
-    IBOutlet UIImageView *Ball;
-    IBOutlet UIButton *StartEasy;
-    IBOutlet UIButton *StartHard;
-    IBOutlet UIImageView *Player;
-    IBOutlet UIImageView *Computer;
-    
-    IBOutlet UILabel *PlayerScore;
-    IBOutlet UILabel *ComputerScore;
-    IBOutlet UILabel *WinOrLose;
-    IBOutlet UIButton *Exit;
 
-    NSTimer *timer;
-}
+        AVAudioPlayer *audioPlayer2;
+    
+        IBOutlet UIImageView *Ball;
+        IBOutlet UIButton *StartEasy;
+        IBOutlet UIButton *StartHard;
+        IBOutlet UIImageView *Player;
+        IBOutlet UIImageView *Computer;
+    
+        IBOutlet UILabel *PlayerScore;
+        IBOutlet UILabel *ComputerScore;
+        IBOutlet UILabel *WinOrLose;
+        IBOutlet UIButton *Exit;
+    
+        NSTimer *timer;
+    }
+
+@property (nonatomic, retain) UIImageView *Player;
+@property (nonatomic, retain) UIImageView *Computer;
+@property (nonatomic, retain) UIImageView *Ball;
+
 
 -(IBAction)StartEasy:(id)sender;
 -(IBAction)StartHard:(id)sender;
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 -(void)StartGame;
 -(void)BallMovement;
 -(void)ComputerMovement;

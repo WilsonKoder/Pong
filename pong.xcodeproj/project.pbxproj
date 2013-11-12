@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C877426E1828DD4B0072714A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C877426D1828DD4B0072714A /* AVFoundation.framework */; };
-		C87742701828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */; };
-		C87742711828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */; };
 		C889B809180D35C600018A0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B808180D35C600018A0C /* UIKit.framework */; };
 		C889B80B180D35C600018A0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B80A180D35C600018A0C /* Foundation.framework */; };
 		C889B80D180D35C600018A0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C889B80C180D35C600018A0C /* CoreGraphics.framework */; };
@@ -47,6 +45,9 @@
 		C889B865180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
 		C8B2DC3E1828F534007E602D /* FaceYourFears.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */; };
 		C8B2DC3F1828F534007E602D /* FaceYourFears.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */; };
+		C8B2DC41182A5B31007E602D /* Collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC40182A5B31007E602D /* Collision.mp3 */; };
+		C8B2DC42182A5B31007E602D /* Collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC40182A5B31007E602D /* Collision.mp3 */; };
+		C8EB09D318321E4900DA15B4 /* Nice dubstep music !.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8EB09D218321E4900DA15B4 /* Nice dubstep music !.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,6 @@
 
 /* Begin PBXFileReference section */
 		C877426D1828DD4B0072714A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nice dubstep music !.mp3"; path = "../../Nice dubstep music !.mp3"; sourceTree = "<group>"; };
 		C889B805180D35C600018A0C /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C889B808180D35C600018A0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C889B80A180D35C600018A0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +96,8 @@
 		C889B862180D3E8400018A0C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		C889B863180D3E8400018A0C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 		C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceYourFears.ttf; sourceTree = "<group>"; };
+		C8B2DC40182A5B31007E602D /* Collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Collision.mp3; sourceTree = "<group>"; };
+		C8EB09D218321E4900DA15B4 /* Nice dubstep music !.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nice dubstep music !.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +176,8 @@
 		C889B80F180D35C600018A0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C877426F1828DEDA0072714A /* Nice dubstep music !.mp3 */,
+				C8B2DC40182A5B31007E602D /* Collision.mp3 */,
+				C8EB09D218321E4900DA15B4 /* Nice dubstep music !.mp3 */,
 				C889B852180D362C00018A0C /* Ball.jpg */,
 				C889B853180D362C00018A0C /* GameBackGround.png */,
 				C889B854180D362C00018A0C /* Menu01.png */,
@@ -298,8 +301,9 @@
 				C889B858180D362C00018A0C /* GameBackGround.png in Resources */,
 				C889B85A180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85C180D362C00018A0C /* Menu02.png in Resources */,
-				C87742701828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */,
 				C8B2DC3E1828F534007E602D /* FaceYourFears.ttf in Resources */,
+				C8B2DC41182A5B31007E602D /* Collision.mp3 in Resources */,
+				C8EB09D318321E4900DA15B4 /* Nice dubstep music !.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +320,8 @@
 				C889B859180D362C00018A0C /* GameBackGround.png in Resources */,
 				C889B85B180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85D180D362C00018A0C /* Menu02.png in Resources */,
-				C87742711828DEDA0072714A /* Nice dubstep music !.mp3 in Resources */,
 				C8B2DC3F1828F534007E602D /* FaceYourFears.ttf in Resources */,
+				C8B2DC42182A5B31007E602D /* Collision.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

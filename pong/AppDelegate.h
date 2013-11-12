@@ -11,6 +11,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, AVAudioPlayerDelegate> {
     AVAudioPlayer *audioPlayer1;
+    AVAudioPlayer *audioPlayer2;
 }
 
 @property (strong, nonatomic) UIWindow *window;

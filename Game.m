@@ -7,12 +7,17 @@
 //
 
 #import "Game.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface Game ()
 
 
 @end
 @implementation Game
+
+@synthesize Ball;
+@synthesize Computer;
+@synthesize Player;
 
 -(void)Collision{
     if (CGRectIntersectsRect(Ball.frame, Player.frame)) {
@@ -23,13 +28,26 @@
     if (CGRectIntersectsRect(Ball.frame, Computer.frame)) {
         Y = arc4random() %5;
     }
+
+
+
+    if (CGRectIntersectsRect(Player.frame, Ball.frame)){
+        NSString *music=[[NSBundle mainBundle]pathForResource:@"Collision" ofType:@"mp3"];
+        audioPlayer2=[[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:music] error:NULL];
+        audioPlayer2.delegate=self;
+        audioPlayer2.numberOfLoops=0;
+        [audioPlayer2 play];
+    }
+
+    if (CGRectIntersectsRect(Computer.frame, Ball.frame)){
+        NSString *music=[[NSBundle mainBundle]pathForResource:@"Collision" ofType:@"mp3"];
+        audioPlayer2=[[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:music] error:NULL];
+        audioPlayer2.delegate=self;
+        audioPlayer2.numberOfLoops=0;
+        [audioPlayer2 play];
+    }
+
 }
-
-
-
-
-
-
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     
@@ -60,6 +78,7 @@
     }
     
 }
+
 
 
 -(void)ComputerMovement{
@@ -139,11 +158,11 @@
     }
     
     /*
-    if (Ball.center.y < 18 || Ball.center.y > 445) {
-        // Y = 0 - Y;
-        Y = -1 * Y;
-    }
-    */
+     if (Ball.center.y < 18 || Ball.center.y > 445) {
+     // Y = 0 - Y;
+     Y = -1 * Y;
+     }
+     */
     
     if (Ball.center.y < 18) {
         PlayerScoreNumber = PlayerScoreNumber + 1;
@@ -185,6 +204,9 @@
     } // end if Ball.center.y > 580
     
 } // end BallMovement
+
+//Start soundCollison
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

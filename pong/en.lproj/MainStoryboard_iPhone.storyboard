@@ -184,6 +184,35 @@
         <image name="Menu05.png" width="320" height="480"/>
         <image name="Player.jpg" width="58" height="18"/>
     </resources>
+    <classes>
+        <class className="Game" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Game.h"/>
+            <relationships>
+                <relationship kind="action" name="StartEasy"/>
+                <relationship kind="action" name="StartEasy:"/>
+                <relationship kind="action" name="StartHard"/>
+                <relationship kind="action" name="StartHard:"/>
+                <relationship kind="outlet" name="Ball" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Computer" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ComputerScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="Exit" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="Player" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PlayerScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="StartEasy" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="StartHard" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="WinOrLose" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AnimatedBackground" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
