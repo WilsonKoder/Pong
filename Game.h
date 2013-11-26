@@ -10,8 +10,10 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-int Y;
-int X;
+double X;
+double Y;
+double length;
+
 int ComputerScoreNumber;
 int PlayerScoreNumber;
 float speed;

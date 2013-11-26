@@ -33,8 +33,6 @@
 		C889B84F180D361600018A0C /* Menu05.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B848180D361600018A0C /* Menu05.png */; };
 		C889B850180D361600018A0C /* Player.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B849180D361600018A0C /* Player.jpg */; };
 		C889B851180D361600018A0C /* Player.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B849180D361600018A0C /* Player.jpg */; };
-		C889B856180D362C00018A0C /* Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B852180D362C00018A0C /* Ball.jpg */; };
-		C889B857180D362C00018A0C /* Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C889B852180D362C00018A0C /* Ball.jpg */; };
 		C889B858180D362C00018A0C /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B853180D362C00018A0C /* GameBackGround.png */; };
 		C889B859180D362C00018A0C /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B853180D362C00018A0C /* GameBackGround.png */; };
 		C889B85A180D362C00018A0C /* Menu01.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B854180D362C00018A0C /* Menu01.png */; };
@@ -43,10 +41,11 @@
 		C889B85D180D362C00018A0C /* Menu02.png in Resources */ = {isa = PBXBuildFile; fileRef = C889B855180D362C00018A0C /* Menu02.png */; };
 		C889B864180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
 		C889B865180D3E8400018A0C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C889B863180D3E8400018A0C /* Game.m */; };
+		C8922EA61844A1B900C033F3 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C8922EA51844A1B900C033F3 /* Ball.png */; };
+		C8A57D20183B619200FF9EE8 /* Collision.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C8A57D1F183B619200FF9EE8 /* Collision.m4a */; };
+		C8A57D21183B619200FF9EE8 /* Collision.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C8A57D1F183B619200FF9EE8 /* Collision.m4a */; };
 		C8B2DC3E1828F534007E602D /* FaceYourFears.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */; };
 		C8B2DC3F1828F534007E602D /* FaceYourFears.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */; };
-		C8B2DC41182A5B31007E602D /* Collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC40182A5B31007E602D /* Collision.mp3 */; };
-		C8B2DC42182A5B31007E602D /* Collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8B2DC40182A5B31007E602D /* Collision.mp3 */; };
 		C8EB09D318321E4900DA15B4 /* Nice dubstep music !.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8EB09D218321E4900DA15B4 /* Nice dubstep music !.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -89,14 +88,14 @@
 		C889B847180D361600018A0C /* Menu04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu04.png; sourceTree = "<group>"; };
 		C889B848180D361600018A0C /* Menu05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu05.png; sourceTree = "<group>"; };
 		C889B849180D361600018A0C /* Player.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Player.jpg; sourceTree = "<group>"; };
-		C889B852180D362C00018A0C /* Ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ball.jpg; sourceTree = "<group>"; };
 		C889B853180D362C00018A0C /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameBackGround.png; sourceTree = "<group>"; };
 		C889B854180D362C00018A0C /* Menu01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu01.png; sourceTree = "<group>"; };
 		C889B855180D362C00018A0C /* Menu02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu02.png; sourceTree = "<group>"; };
 		C889B862180D3E8400018A0C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		C889B863180D3E8400018A0C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		C8922EA51844A1B900C033F3 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		C8A57D1F183B619200FF9EE8 /* Collision.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Collision.m4a; sourceTree = "<group>"; };
 		C8B2DC3D1828F534007E602D /* FaceYourFears.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceYourFears.ttf; sourceTree = "<group>"; };
-		C8B2DC40182A5B31007E602D /* Collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Collision.mp3; sourceTree = "<group>"; };
 		C8EB09D218321E4900DA15B4 /* Nice dubstep music !.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nice dubstep music !.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,9 +175,9 @@
 		C889B80F180D35C600018A0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C8B2DC40182A5B31007E602D /* Collision.mp3 */,
+				C8922EA51844A1B900C033F3 /* Ball.png */,
+				C8A57D1F183B619200FF9EE8 /* Collision.m4a */,
 				C8EB09D218321E4900DA15B4 /* Nice dubstep music !.mp3 */,
-				C889B852180D362C00018A0C /* Ball.jpg */,
 				C889B853180D362C00018A0C /* GameBackGround.png */,
 				C889B854180D362C00018A0C /* Menu01.png */,
 				C889B855180D362C00018A0C /* Menu02.png */,
@@ -287,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8922EA61844A1B900C033F3 /* Ball.png in Resources */,
 				C889B813180D35C600018A0C /* InfoPlist.strings in Resources */,
 				C889B81B180D35C600018A0C /* Default.png in Resources */,
 				C889B81D180D35C700018A0C /* Default@2x.png in Resources */,
@@ -294,15 +294,14 @@
 				C889B822180D35C700018A0C /* MainStoryboard_iPhone.storyboard in Resources */,
 				C889B825180D35C700018A0C /* MainStoryboard_iPad.storyboard in Resources */,
 				C889B84A180D361600018A0C /* Menu03.png in Resources */,
+				C8A57D20183B619200FF9EE8 /* Collision.m4a in Resources */,
 				C889B84C180D361600018A0C /* Menu04.png in Resources */,
 				C889B84E180D361600018A0C /* Menu05.png in Resources */,
 				C889B850180D361600018A0C /* Player.jpg in Resources */,
-				C889B856180D362C00018A0C /* Ball.jpg in Resources */,
 				C889B858180D362C00018A0C /* GameBackGround.png in Resources */,
 				C889B85A180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85C180D362C00018A0C /* Menu02.png in Resources */,
 				C8B2DC3E1828F534007E602D /* FaceYourFears.ttf in Resources */,
-				C8B2DC41182A5B31007E602D /* Collision.mp3 in Resources */,
 				C8EB09D318321E4900DA15B4 /* Nice dubstep music !.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,16 +311,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C889B83A180D35C700018A0C /* InfoPlist.strings in Resources */,
+				C8A57D21183B619200FF9EE8 /* Collision.m4a in Resources */,
 				C889B84B180D361600018A0C /* Menu03.png in Resources */,
 				C889B84D180D361600018A0C /* Menu04.png in Resources */,
 				C889B84F180D361600018A0C /* Menu05.png in Resources */,
 				C889B851180D361600018A0C /* Player.jpg in Resources */,
-				C889B857180D362C00018A0C /* Ball.jpg in Resources */,
 				C889B859180D362C00018A0C /* GameBackGround.png in Resources */,
 				C889B85B180D362C00018A0C /* Menu01.png in Resources */,
 				C889B85D180D362C00018A0C /* Menu02.png in Resources */,
 				C8B2DC3F1828F534007E602D /* FaceYourFears.ttf in Resources */,
-				C8B2DC42182A5B31007E602D /* Collision.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
